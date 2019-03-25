@@ -1,0 +1,18 @@
+ 1,kotlin_version = '1.3.20'
+ 
+ 2
+ #热更新
+-keepclassmembers class com.xueshanjinrong.jinqianhui.App {
+    public <init>();
+}
+#-keep class com.xueshanjinrong.jinqianhui.SophixStubApplication$RealApplicationStub
+-keep class com.taobao.sophix.**{*;}
+-keep class com.ta.utdid2.device.**{*;}
+-dontwarn com.alibaba.sdk.android.utils.**
+-dontoptimize
+
+3
+#Mob-SMSSDK
+ -keep class com.mob.**{*;}
+ -keep class cn.smssdk.**{*;}
+ -dontwarn com.mob.**
